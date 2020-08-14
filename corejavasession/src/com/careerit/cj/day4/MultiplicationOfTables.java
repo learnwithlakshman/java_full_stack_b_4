@@ -1,5 +1,9 @@
 package com.careerit.cj.day4;
 
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class MultiplicationOfTables {
 
 	public static void main(String[] args) {
@@ -112,13 +116,12 @@ public class MultiplicationOfTables {
 //			}
 
 //		}
-		
-		
+
 		// 1 2 3 4
-		// 5 6 7 8 
+		// 5 6 7 8
 		// 9 10 11 12
 		// 13 14 15 16
-		
+
 //		int c = 1;
 //		for(int i=1;i<=4;i++) {
 //			 
@@ -128,13 +131,10 @@ public class MultiplicationOfTables {
 //			 System.out.println();
 //		}
 
-		//   *
-		//   * *
-		//   * * *
-		
-		
-		
-		
+		// *
+		// * *
+		// * * *
+
 //		int n=10;
 //		
 //		for(int i=1;i<=n;i++) {
@@ -150,30 +150,34 @@ public class MultiplicationOfTables {
 //			}
 //			System.out.println();
 //		}
-		
-		
+
 		// GCD two numbers
-		
+
 		int num1 = 35, num2 = 42;
-		
-		for(;num1!=num2;) {
-			if(num1 > num2) {
+
+		for (; num1 != num2;) {
+			if (num1 > num2) {
 				num1 = num1 - num2;
-			}else {
+			} else {
 				num2 = num2 - num1;
 			}
 		}
+
+		int small = num1 < num2 ? num1 : num2;
+
+//		int res=0;
+//		for(int i=1;i<=small;i++) {
+//			if(num1 % i == 0 && num2 % i == 0) {
+//				res = i;
+//			}
+//		}
+//		System.out.println(res);
+//		
 		
-		int small = num1 < num2 ? num1:num2;
-		
-		int res=0;
-		for(int i=1;i<=small;i++) {
-			if(num1 % i == 0 && num2 % i == 0) {
-				res = i;
-			}
-		}
-		System.out.println(res);
-		
+
 	}
- 
-} 
+
+
+
+	
+}
