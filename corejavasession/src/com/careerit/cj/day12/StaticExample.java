@@ -16,6 +16,7 @@ public class StaticExample {
 	
 	static int num = 100;
 	public static final void main(final String... args) {
+		
 		String[] strArr = new String[] { "123", "121", "12421", "12321", "liril", "mom", "dad", "brother" };
 		int count = planindromeCount(strArr);
 		out.println("Count of palindrome in given array is :" + count);
@@ -36,8 +37,7 @@ public class StaticExample {
 	}
 	
 	static class Inner{
-		
-			public  void greet() {
+		public  void greet() {
 				System.out.println("Hi, How are you?");
 			}
 	}
