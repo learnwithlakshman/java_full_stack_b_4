@@ -1,9 +1,20 @@
 package com.careerit.cj.day19;
 
 interface Instrument{
-	public abstract void play();
+	 void play();
 }
 
+
+class Guitar implements Instrument{
+
+	@Override
+	public void play() {
+
+			System.out.println("TINTINTINT TINTINTINTINT ......");
+	}
+	
+	
+}
 //
 
 //
@@ -19,5 +30,9 @@ public class InstrumentManager {
 	// Play all the instruments
 	
 	// Display count of each instrument 
+	
+	public static void main(String[] args) {
+		Instrument[] arr = new Instrument[10];
+	}
 	
 }
