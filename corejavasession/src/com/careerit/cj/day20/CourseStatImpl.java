@@ -13,7 +13,10 @@ public class CourseStatImpl implements CourseStat{
 	
 	@Override
 	public List<Student> studentsByQualification(String qualification) {
-		return studentList.stream().filter(s->s.getQualification().equalsIgnoreCase(qualification)).collect(Collectors.toList());
+		return studentList.stream()
+				.filter(s->s.getQualification()
+				.equalsIgnoreCase(qualification))
+				.collect(Collectors.toList());
 	}
 
 	@Override
